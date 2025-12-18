@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MintSoft - Mobile Apps</title>
+    <meta name="description" content="MintSoft에서 제작한 모바일 앱 목록입니다.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .logo span { color: #a8edea; }
+        .tagline {
+            color: rgba(255,255,255,0.9);
+            font-size: 18px;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .app-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+        }
+        .app-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+        .app-name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .app-desc {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .app-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .app-links a {
+            font-size: 13px;
+            color: #667eea;
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .app-links a:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        .colorsnapr .app-icon { background: linear-gradient(135deg, #ff6b6b, #feca57); }
+        .fontsnapr .app-icon { background: linear-gradient(135deg, #5B4FCF, #7B6FDF); }
+        .dashlens .app-icon { background: linear-gradient(135deg, #2d3436, #636e72); }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+        footer a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+        }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Mint<span>Soft</span></h1>
+            <p class="tagline">Simple & Useful Mobile Apps</p>
+        </header>
+
+        <div class="apps-grid">
+            <div class="app-card colorsnapr">
+                <div class="app-icon">🎨</div>
+                <h2 class="app-name">ColorSnapr</h2>
+                <p class="app-desc">카메라로 실시간 색상을 추출하고 컬러 팔레트를 만들어보세요. 디자이너와 개발자를 위한 필수 도구입니다.</p>
+                <div class="app-links">
+                </div>
+            </div>
+
+            <div class="app-card fontsnapr">
+                <div class="app-icon">🔤</div>
+                <h2 class="app-name">FontSnapr</h2>
+                <p class="app-desc">이미지에서 폰트를 AI로 식별합니다. 마음에 드는 폰트를 발견하면 바로 촬영해서 어떤 폰트인지 알아보세요.</p>
+                <div class="app-links">
+                </div>
+            </div>
+
+            <div class="app-card dashlens">
+                <div class="app-icon">🚗</div>
+                <h2 class="app-name">DashLens</h2>
+                <p class="app-desc">자동차 대시보드 경고등을 AI로 분석합니다. 경고등이 켜졌을 때 무엇을 의미하는지 바로 확인하세요.</p>
+                <div class="app-links">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 MintSoft. All rights reserved.</p>
+            <p>Contact: <a href="mailto:app@mint-soft.com">app@mint-soft.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
