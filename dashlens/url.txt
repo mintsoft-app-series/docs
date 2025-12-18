@@ -1,0 +1,11 @@
+DashLens - AI Car Dashboard Warning Light Analyzer
+==================================================
+
+Privacy Policy:
+https://doc.mint-soft.com/dashlens/privacy.html
+
+Terms of Service:
+https://doc.mint-soft.com/dashlens/terms.html
+
+Support:
+https://doc.mint-soft.com/dashlens/support.html
